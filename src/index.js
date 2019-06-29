@@ -4,18 +4,19 @@ import Grid from "@SS/design-system/src/components/layout/Grid.jsx";
 import Column from "@SS/design-system/src/components/layout/Column.jsx";
 import Box from "@SS/design-system/src/components/layout/Box";
 import Text from "@SS/design-system/src/components/typography/Text.jsx";
-const Page = ({ children, ...rest }) => <section>{children}</section>;
-
+import Page from "@SS/design-system/src/components/layout/Page";
 const App = () => (
   <Page>
-    <Grid>
+    <Grid columns={2}>
       <Column>
-        <Box>
+        <Box justifyContent="center" alignItems="center">
           <Text>Hello World</Text>
         </Box>
       </Column>
       <Column>
-        <Text>GoodBye World</Text>
+        <Box justifyContent="center" alignItems="center">
+          <Text>GoodBye World</Text>
+        </Box>
       </Column>
     </Grid>
   </Page>
